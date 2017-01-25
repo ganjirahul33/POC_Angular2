@@ -1,0 +1,4 @@
+<select [(ngModel)]="selectedCountry.id">
+  <option *ngFor="#country of countries" value= {{country.id}}>{{country.name}}</option>
+</select>
+{{selectedCountry.name}}

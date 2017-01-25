@@ -1,0 +1,29 @@
+<!--<section>
+    <section *ngIf="isLoading && !errorMessage">
+    Loading our hyperdrives!!! Retrieving data...
+    </section>
+      <ul>
+        <!-- this is the new syntax for ng-repeat -->
+        <!--<li *ngFor="let person of people">
+            <a href="#" [routerLink]="['/persons', person.id]">
+          {{person.name}}
+          </a>
+        </li>
+      </ul>
+      <section *ngIf="errorMessage">
+        {{errorMessage}}
+      </section>
+  </section>-->
+  -->
+
+  <div>
+    <p-dataTable [value]="people" selectionMode="single" [paginator]="true" [rows]="5" [responsive]="true" paginatorPosition="top">
+        <header>CRUD for People</header>
+        <p-column field="id" header="id" [sortable]="true"></p-column>
+        <p-column field="name" header="name" [sortable]="true"></p-column>
+        <p-column field="weight" header="weight" [sortable]="true"></p-column>
+        <p-column field="height" header="height" [sortable]="true"></p-column>
+        <footer><div class="ui-helper-clearfix" style="width:100%"><button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAdd()" label="Add"></button></div></footer>
+    </p-dataTable>
+
+    <div>
