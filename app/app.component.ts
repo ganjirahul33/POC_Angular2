@@ -8,7 +8,7 @@ import {Component} from '@angular/core';
       <a routerLink="/persons"  routerLinkActive="active">Persions</a>
       <a routerLink="/cars"  routerLinkActive="active">Cars</a>
       <!--<a routerLink="/custompaginator" routerLink="active">Custom Paginator</a>-->
-      <a routerLink="/vdatatable" routerLink="active" >Vertical DataTable</a>
+      <a routerLink="/vdatatable" routerLinkActive="active" >Vertical DataTable</a>
     <nav>
     <router-outlet></router-outlet>
     `,

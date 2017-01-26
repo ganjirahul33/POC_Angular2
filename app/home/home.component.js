@@ -9,29 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var country_1 = require('./country');
-var Vdatatable = (function () {
-    function Vdatatable() {
-        this.countries = [
-            new country_1.Country(1, 'USA'),
-            new country_1.Country(2, 'India'),
-            new country_1.Country(3, 'Australia'),
-            new country_1.Country(4, 'Brazil'),
-            new country_1.Country(5, 'Russia'),
-            new country_1.Country(6, 'Russia1'),
-            new country_1.Country(7, 'Russia2')
-        ];
+var Home = (function () {
+    function Home() {
     }
-    Vdatatable.prototype.ngOnInit = function () {
-    };
-    Vdatatable = __decorate([
+    Home = __decorate([
         core_1.Component({
-            templateUrl: 'app/vdatatable/vdatatable.html',
-            styleUrls: ['app/vdatatable/vdatatable.css']
+            templateUrl: 'app/home/home.html',
+            styleUrls: ['app/home/home.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], Vdatatable);
-    return Vdatatable;
+    ], Home);
+    return Home;
 }());
-exports.Vdatatable = Vdatatable;
-//# sourceMappingURL=vdatatable.component.js.map
+exports.Home = Home;
+//# sourceMappingURL=home.component.js.map

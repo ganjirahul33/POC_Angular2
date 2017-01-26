@@ -1,0 +1,40 @@
+
+/*
+table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+}*/
+
+/*tr:nth-child(even) {
+    background: #CCC
+}
+tr:nth-child(odd) {
+    background: #FFF
+}*/
+
+/*col:first-child {background: #FF0}
+col:nth-child(2n+3) {background: #CCC}*/
+
+.TFtableCol{
+		width:100%; 
+		border-collapse:collapse; 
+	}
+    .TFtableCol th{ 
+		padding:7px; border:#CCC 1px solid;
+	}
+	.TFtableCol td{ 
+		padding:7px; border:#CCC 1px solid;
+	}
+	/* improve visual readability for IE8 and below */
+	.TFtableCol tr{
+		background: #eaeaea;
+	}
+	/*  Define the background color for all the ODD table columns  */
+	.TFtableCol tr td:nth-child(odd){ 
+		background: #eaeaea;
+	}
+	/*  Define the background color for all the EVEN table columns  */
+	.TFtableCol tr td:nth-child(even){
+		background: white;
+	}

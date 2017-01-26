@@ -5,7 +5,7 @@ import {AppRouting} from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import {Home} from './home.component';
+import {Home} from './home/home.component';
 import {Dropdown} from './dropdown_boostrap/dropdown.component';
 import { PeopleListComponent } from './datatable/people-list.component';
 import { PersonDetailsComponent } from './datatable/person-details.component';

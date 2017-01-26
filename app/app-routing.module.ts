@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {RouterModule,Routes} from '@angular/router';
 import {Dropdown} from './dropdown_boostrap/dropdown.component';
-import {Home} from './home.component';
+import {Home} from './home/home.component';
 import { PeopleListComponent } from './datatable/people-list.component';
 import { PersonDetailsComponent } from './datatable/person-details.component';
 import {CarsComponent} from './cars/cars.component';

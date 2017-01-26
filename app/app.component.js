@@ -15,7 +15,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "<h1>First App</h1>\n    <nav>\n      <a routerLink=\"/home\"  routerLinkActive=\"active\">Home</a>\n      <a routerLink=\"/dropdown\"  routerLinkActive=\"active\">Dropdown</a>\n      <a routerLink=\"/persons\"  routerLinkActive=\"active\">Persions</a>\n      <a routerLink=\"/cars\"  routerLinkActive=\"active\">Cars</a>\n      <!--<a routerLink=\"/custompaginator\" routerLink=\"active\">Custom Paginator</a>-->\n      <a routerLink=\"/vdatatable\" routerLink=\"active\" >Vertical DataTable</a>\n    <nav>\n    <router-outlet></router-outlet>\n    ",
+            template: "<h1>First App</h1>\n    <nav>\n      <a routerLink=\"/home\"  routerLinkActive=\"active\">Home</a>\n      <a routerLink=\"/dropdown\"  routerLinkActive=\"active\">Dropdown</a>\n      <a routerLink=\"/persons\"  routerLinkActive=\"active\">Persions</a>\n      <a routerLink=\"/cars\"  routerLinkActive=\"active\">Cars</a>\n      <!--<a routerLink=\"/custompaginator\" routerLink=\"active\">Custom Paginator</a>-->\n      <a routerLink=\"/vdatatable\" routerLinkActive=\"active\" >Vertical DataTable</a>\n    <nav>\n    <router-outlet></router-outlet>\n    ",
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
