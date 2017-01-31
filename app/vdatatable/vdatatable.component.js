@@ -5,33 +5,39 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var core_1 = require('@angular/core');
-var country_1 = require('./country');
+var core_1 = require("@angular/core");
+var country_list_1 = require("./country.list");
 var Vdatatable = (function () {
     function Vdatatable() {
-        this.countries = [
-            new country_1.Country(1, 'USA'),
-            new country_1.Country(2, 'India'),
-            new country_1.Country(3, 'Australia'),
-            new country_1.Country(4, 'Brazil'),
-            new country_1.Country(5, 'Russia'),
-            new country_1.Country(6, 'Russia1'),
-            new country_1.Country(7, 'Russia2')
-        ];
+        // countries = [
+        //  new Country(1, 'USA' ),
+        //  new Country(2, 'India' ),
+        //  new Country(3, 'Australia' ),
+        //  new Country(4, 'Brazil'),
+        //  new Country(5, 'Russia'),
+        //  new Country(6, 'Russia1'),
+        //  new Country(7, 'Russia2')
+        // ];
+        this.countries = country_list_1.countryList[0];
     }
     Vdatatable.prototype.ngOnInit = function () {
+        console.log("onInt");
     };
-    Vdatatable = __decorate([
-        core_1.Component({
-            templateUrl: 'app/vdatatable/vdatatable.html',
-            styleUrls: ['app/vdatatable/vdatatable.css']
-        }), 
-        __metadata('design:paramtypes', [])
-    ], Vdatatable);
+    Vdatatable.prototype.callback = function () {
+        var _this = this;
+        return function (page) {
+            _this.countries = country_list_1.countryList[page];
+            console.log("page:" + page);
+            console.log("countries:" + _this.countries);
+        };
+    };
     return Vdatatable;
 }());
+Vdatatable = __decorate([
+    core_1.Component({
+        templateUrl: 'app/vdatatable/vdatatable.html',
+        styleUrls: ['app/vdatatable/vdatatable.css']
+    })
+], Vdatatable);
 exports.Vdatatable = Vdatatable;
 //# sourceMappingURL=vdatatable.component.js.map

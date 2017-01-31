@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var http_1 = require('@angular/http');
+var core_1 = require("@angular/core");
+var http_1 = require("@angular/http");
 var CarService = (function () {
     function CarService(http) {
         this.http = http;
@@ -20,11 +20,11 @@ var CarService = (function () {
             .then(function (res) { return res.json().data; })
             .then(function (data) { return data; });
     };
-    CarService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [http_1.Http])
-    ], CarService);
     return CarService;
 }());
+CarService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], CarService);
 exports.CarService = CarService;
 //# sourceMappingURL=carservice.js.map

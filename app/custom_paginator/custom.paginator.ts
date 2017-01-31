@@ -20,9 +20,12 @@ export class CustomPaginator {
     
     @Input() rowsPerPageOptions: number[];
 
+    @Input('cb') callBack: any;
+
+
     public pageLinks: number[];
 
-    public _totalRecords: number = 12;
+    public _totalRecords: number = 6;
     
     public _first: number = 0;
     
@@ -82,6 +85,8 @@ export class CustomPaginator {
         for(let i = start; i <= end; i++) {
             this.pageLinks.push(i + 1);
         }
+        
+
     }
 
     changePage(p :number, event) {
@@ -99,6 +104,7 @@ export class CustomPaginator {
             this.updatePageLinks();
             this.onPageChange.emit(state);
             console.log(state);
+            this.callBack(state.page);
         }
         
         if(event) {

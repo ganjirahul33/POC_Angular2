@@ -8,9 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var people_service_1 = require('./people.service');
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var people_service_1 = require("./people.service");
 var PersonDetailsComponent = (function () {
     function PersonDetailsComponent(peopleService, route, router) {
         this.peopleService = peopleService;
@@ -40,14 +40,16 @@ var PersonDetailsComponent = (function () {
             .save(this.person)
             .subscribe(function (r) { console.log('success'); });
     };
-    PersonDetailsComponent = __decorate([
-        core_1.Component({
-            selector: 'person-details',
-            templateUrl: 'app/datatable/person-details.component.html'
-        }), 
-        __metadata('design:paramtypes', [people_service_1.PeopleService, router_1.ActivatedRoute, router_1.Router])
-    ], PersonDetailsComponent);
     return PersonDetailsComponent;
 }());
+PersonDetailsComponent = __decorate([
+    core_1.Component({
+        selector: 'person-details',
+        templateUrl: 'app/datatable/person-details.component.html'
+    }),
+    __metadata("design:paramtypes", [people_service_1.PeopleService,
+        router_1.ActivatedRoute,
+        router_1.Router])
+], PersonDetailsComponent);
 exports.PersonDetailsComponent = PersonDetailsComponent;
 //# sourceMappingURL=person-details.component.js.map

@@ -9,3 +9,5 @@
 		<td *ngFor="let country of countries">{{country.name}}</td>
 	</tr>
 </table>
+<!--<custom-paginator [cb]='callback'></custom-paginator> -->
+ <p-paginator [cb]='callback()'></p-paginator>
