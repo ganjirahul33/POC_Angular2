@@ -1,5 +1,6 @@
 import {NgModule,Component,ElementRef,Input,Output,SimpleChange,EventEmitter} from '@angular/core';
 import {CommonModule} from '@angular/common';
+import { countryList } from '../vdatatable/country.list';
 
 @Component({
     selector: 'p-paginator',
@@ -25,7 +26,7 @@ export class CustomPaginator {
 
     public pageLinks: number[];
 
-    public _totalRecords: number = 6;
+    public _totalRecords: number = Object.keys(countryList).length*this.rows;
     
     public _first: number = 0;
     

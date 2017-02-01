@@ -1,5 +1,5 @@
 "use strict";
-var country_1 = require("./country");
+var country_1 = require('./country');
 exports.countryList = {
     0: [new country_1.Country(1, 'USA'), new country_1.Country(2, 'India')],
     1: [new country_1.Country(3, 'Australia'), new country_1.Country(4, 'Brazil')],
