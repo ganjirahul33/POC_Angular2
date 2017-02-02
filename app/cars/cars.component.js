@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var carservice_1 = require('./carservice');
+var core_1 = require("@angular/core");
+var carservice_1 = require("./carservice");
 var PrimeCar = (function () {
     function PrimeCar(vin, year, brand, color) {
         this.vin = vin;
@@ -61,14 +61,14 @@ var CarsComponent = (function () {
     CarsComponent.prototype.findSelectedCarIndex = function () {
         return this.cars.indexOf(this.selectedCar);
     };
-    CarsComponent = __decorate([
-        core_1.Component({
-            templateUrl: 'app/cars/cars.html',
-            selector: 'cars-list'
-        }), 
-        __metadata('design:paramtypes', [carservice_1.CarService])
-    ], CarsComponent);
     return CarsComponent;
 }());
+CarsComponent = __decorate([
+    core_1.Component({
+        templateUrl: 'app/cars/cars.html',
+        selector: 'cars-list'
+    }),
+    __metadata("design:paramtypes", [carservice_1.CarService])
+], CarsComponent);
 exports.CarsComponent = CarsComponent;
 //# sourceMappingURL=cars.component.js.map

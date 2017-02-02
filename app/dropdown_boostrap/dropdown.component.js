@@ -5,11 +5,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var core_1 = require('@angular/core');
-var country_1 = require('./country');
+var core_1 = require("@angular/core");
+var country_1 = require("./country");
 var Dropdown = (function () {
     function Dropdown() {
         this.countries = [
@@ -97,15 +94,14 @@ var Dropdown = (function () {
         console.log("item selected:" + name);
         this.selectedProject = name;
     };
-    Dropdown = __decorate([
-        core_1.Component({
-            selector: '<drop-down>',
-            template: "    \n    <h2>Dropdown Example</h2>\n\n  <div id=\"dropdown-main-div\" class=\"dropdown\">\n  <!--<button class=\"btn btn-primary dropdown-toggle\" id=\"menu1\" type=\"button\" data-toggle=\"dropdown\"> -->\n    {{selectedProject}}<button class=\"dropdown-button-div\" id=\"menu1\" type=\"button\" data-toggle=\"dropdown\">\n    <span class=\"caret\"></span>\n    </button>\n    \n    \n    <ul class=\"dropdown-menu project-dropdown\" role=\"menu\" aria-labelledby=\"menu1\">\n        <div class=\"dropdown-header-div\">\n        <strong>Please pick a project</strong>\n        </div>\n      \n        <li *ngFor=\"let country of countries\" role=\"presentation\" (click)=\"selectedItem(country.name)\"><a href=\"#\" role=\"menuitem\" tabindex=\"-1\" >{{country.name}}</a></li>\n          \n        <div id=\"container\">\n            <a href=\"#\" id=\"trigger\" (click)=\"loadMore()\">See more...</a>\n        </div>\n    </ul>\n    <div id=\"pop-up\">\n        <b>Popup with list of all categories in alphabetical order if \"See more\" is selected\n        </b>\n    </div>\n     \n  </div>\n\n",
-            styleUrls: ['app/dropdown_boostrap/dropdown.css']
-        }), 
-        __metadata('design:paramtypes', [])
-    ], Dropdown);
     return Dropdown;
 }());
+Dropdown = __decorate([
+    core_1.Component({
+        selector: '<drop-down>',
+        template: "    \n    <h2>Dropdown Example</h2>\n\n  <div id=\"dropdown-main-div\" class=\"dropdown\">\n  <!--<button class=\"btn btn-primary dropdown-toggle\" id=\"menu1\" type=\"button\" data-toggle=\"dropdown\"> -->\n    {{selectedProject}}<button class=\"dropdown-button-div\" id=\"menu1\" type=\"button\" data-toggle=\"dropdown\">\n    <span class=\"caret\"></span>\n    </button>\n    \n    \n    <ul class=\"dropdown-menu project-dropdown\" role=\"menu\" aria-labelledby=\"menu1\">\n        <div class=\"dropdown-header-div\">\n        <strong>Please pick a project</strong>\n        </div>\n      \n        <li *ngFor=\"let country of countries\" role=\"presentation\" (click)=\"selectedItem(country.name)\"><a href=\"#\" role=\"menuitem\" tabindex=\"-1\" >{{country.name}}</a></li>\n          \n        <div id=\"container\">\n            <a href=\"#\" id=\"trigger\" (click)=\"loadMore()\">See more...</a>\n        </div>\n    </ul>\n    <div id=\"pop-up\">\n        <b>Popup with list of all categories in alphabetical order if \"See more\" is selected\n        </b>\n    </div>\n     \n  </div>\n\n",
+        styleUrls: ['app/dropdown_boostrap/dropdown.css']
+    })
+], Dropdown);
 exports.Dropdown = Dropdown;
 //# sourceMappingURL=dropdown.component.js.map

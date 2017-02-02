@@ -8,12 +8,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var common_1 = require('@angular/common');
-var country_list_1 = require('../vdatatable/country.list');
+var core_1 = require("@angular/core");
+var common_1 = require("@angular/common");
+var country_list_1 = require("../vdatatable/country.list");
 var CustomPaginator = (function () {
     function CustomPaginator() {
-        this.rows = 2;
+        this.rows = 5;
         this.pageLinkSize = 5;
         this.onPageChange = new core_1.EventEmitter();
         this._totalRecords = Object.keys(country_list_1.countryList).length * this.rows;
@@ -106,65 +106,65 @@ var CustomPaginator = (function () {
         this.rows = this.rowsPerPageOptions[event.target.selectedIndex];
         this.changePageToFirst(event);
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], CustomPaginator.prototype, "rows", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], CustomPaginator.prototype, "pageLinkSize", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', core_1.EventEmitter)
-    ], CustomPaginator.prototype, "onPageChange", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], CustomPaginator.prototype, "style", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], CustomPaginator.prototype, "styleClass", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Array)
-    ], CustomPaginator.prototype, "rowsPerPageOptions", void 0);
-    __decorate([
-        core_1.Input('cb'), 
-        __metadata('design:type', Object)
-    ], CustomPaginator.prototype, "callBack", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], CustomPaginator.prototype, "totalRecords", null);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], CustomPaginator.prototype, "first", null);
-    CustomPaginator = __decorate([
-        core_1.Component({
-            selector: 'p-paginator',
-            templateUrl: 'app/custom_paginator/paginator.html',
-            styleUrls: ['app/custom_paginator/paginator.css']
-        }), 
-        __metadata('design:paramtypes', [])
-    ], CustomPaginator);
     return CustomPaginator;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], CustomPaginator.prototype, "rows", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], CustomPaginator.prototype, "pageLinkSize", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", core_1.EventEmitter)
+], CustomPaginator.prototype, "onPageChange", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], CustomPaginator.prototype, "style", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], CustomPaginator.prototype, "styleClass", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Array)
+], CustomPaginator.prototype, "rowsPerPageOptions", void 0);
+__decorate([
+    core_1.Input('cb'),
+    __metadata("design:type", Object)
+], CustomPaginator.prototype, "callBack", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number),
+    __metadata("design:paramtypes", [Number])
+], CustomPaginator.prototype, "totalRecords", null);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number),
+    __metadata("design:paramtypes", [Number])
+], CustomPaginator.prototype, "first", null);
+CustomPaginator = __decorate([
+    core_1.Component({
+        selector: 'p-paginator',
+        templateUrl: 'app/custom_paginator/paginator.html',
+        styleUrls: ['app/custom_paginator/paginator.css']
+    })
+], CustomPaginator);
 exports.CustomPaginator = CustomPaginator;
 var PaginatorModule = (function () {
     function PaginatorModule() {
     }
-    PaginatorModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule],
-            exports: [CustomPaginator],
-            declarations: [CustomPaginator]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], PaginatorModule);
     return PaginatorModule;
 }());
+PaginatorModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule],
+        exports: [CustomPaginator],
+        declarations: [CustomPaginator]
+    })
+], PaginatorModule);
 exports.PaginatorModule = PaginatorModule;
 //# sourceMappingURL=custom.paginator.js.map

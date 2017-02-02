@@ -9,7 +9,7 @@ import { countryList } from '../vdatatable/country.list';
 })
 export class CustomPaginator {
 
-    @Input() rows: number = 2;
+    @Input() rows: number = 5;
 
     @Input() pageLinkSize: number = 5;
 
